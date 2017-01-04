@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lego group</title>
+    <script src="js/jquery-3.0.0.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .main-block {
+            max-width: 768px;
+        }
+
+        .block {
+            margin-bottom: 20px;
+        }
+
+        .my-thumbnail {
+            text-align: center;
+        }
+
+        .my-thumbnail p {
+            margin: 0 10px 10px 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .alc {
+            text-align: center;
+        }
+
+        .sub-header {
+            font-size: 1.5em;
+        }
+
+        .my-thumbnail > p {
+            min-height: 40px;
+        }
+
+        .benefit {
+            height: 200px;
+            font-size: 1.5em;
+        }
+
+        .benefit img {
+            float: left;
+            margin-top: -50px;
+            margin-right: 10px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+        .price{
+            font-size: 2em;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .xs-link{
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<div>
+<div class="center-block main-block">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Lego group</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#">Link</a></li>-->
+                <li><p class="navbar-text">+7 951 557 58 56</p></li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="block">
+    <div style="position: relative">
+        <img src="img/carousel1.JPG" class="img-responsive" alt="Частные уроки Lego конструирования в Воронеже">
+
+        <div style="position: absolute; z-index: 10; top: 0px; left: 20px; color: #fff;    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);">
+            <h1>Частные уроки Lego конструирования</h1>
+
+            <p class="sub-header">в Воронеже</p>
+
+            <p>от 50 рублей</p>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="block">
+    <h2>Для кого?</h2>
+
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <img src="img/malchik2.jpg" alt="Уроки Lego конструирования для мальчиков от 10 лет">
+
+                <div class="caption">
+                    <h4>
+                        <small>Для</small>
+                        Мальчиков
+                    </h4>
+                    <p>от 10 лет</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <img src="img/girl1-1.jpg" alt="Уроки Lego конструирования для девочек от 10 лет">
+
+                <div class="caption">
+                    <h4>
+                        <small>Для</small>
+                        Девочек
+                    </h4>
+                    <p>от 10 лет</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <img src="img/man1.jpg" alt="Уроки Lego конструирования для взрослых">
+
+                <div class="caption">
+                    <h4>
+                        <small>Для</small>
+                        Взрослых
+                    </h4>
+                    <p>не ограничено?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="block">
+    <h2>Мы проводим занятия с Lego EV3 Mindstorm</h2>
+
+    <p class="sub-header alc">Смотрите что он умеет</p>
+
+    <!-- 16:9 aspect ratio -->
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/OGDGblossmQ" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="block constructor-parts">
+    <h2>Из чего состоит конструктор?</h2>
+
+    <div class="row">
+
+
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Компьютер на Linux</h4>
+
+                    <p>Мозг робота</p>
+                </div>
+                <img src="img/details/comp.jpg" alt="LEGO Компьютер на Linux">
+
+                <p>Компьютер управляет всеми датчиками и моторами. А еще он умеет издавать разные звуки!</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Датчик расстояния</h4>
+
+                    <p>Глаза робота</p>
+                </div>
+                <img src="img/details/dalnomer.jpg" alt="Датчик расстояния">
+
+                <p>Позволяет обнаруживать препятствия на расстоянии до 70см.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Датчик цвета</h4>
+
+                    <p>Зрение робота</p>
+                </div>
+                <img src="img/details/color-d.jpg" alt="Датчик цвета">
+
+                <p>Распознавать цвета и измерять освещенность в помещении.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Датчик касания</h4>
+
+                    <p>Тактильные ощущения робота</p>
+                </div>
+                <img src="img/details/kasaniy.jpg" alt="Датчик касания">
+
+                <p>Определяет препядствия и предметы на ощупь.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Инфракрасный маяк</h4>
+
+                    <p>Указатель для робота</p>
+                </div>
+                <img src="img/details/maiyk.jpg" alt="Инфракрасный маяк">
+
+                <p>Робот может определять направление на маяк с помощью инфракрасного дальномера.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Шаговые двигатели</h4>
+
+                    <p>2 больших и 1 средний</p>
+                </div>
+                <img src="img/details/motor.jpg" alt="LEGO Шаговые двигатели">
+
+                <p>Это мышцы робота. С помощью двигателей робот приводится в движение.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>601 деталь</h4>
+
+                    <p>Кости робота</p>
+                </div>
+                <img src="img/details/details3.jpg" alt="Детали Lego констуктора">
+
+                <p>С помощью них можно собрать разные модели роботов, машин и т.д.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Среда прграммирования</h4>
+
+                    <p>Интеллект робота</p>
+                </div>
+                <img src="img/details/progr2.jpg" height="96" alt="Среда прграммирования LEGO"
+                     style="margin-bottom: 24px">
+
+                <p>Специальная среда программирования для детей. Для составления программы достаточно расположить блоки
+                    в нужном порядке. <br>Сможет делать даже ребенок!</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="block">
+    <h2>На занятиях вы соберете:</h2>
+
+    <div class="row">
+
+        <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>EV3RSTORM</h4>
+                </div>
+                <img src="img/models/EV3RSTORM.jpg" alt="EV3RSTORM">
+
+                <p>Робот может ездить, поворачивать, обнаруживать препятствия, стрелять и хватать легкие предметы.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>R3PTAR</h4>
+                </div>
+                <img src="img/models/R3PTAR.jpg" alt="R3PTAR">
+
+                <p>Робот-змея. Ползает и нападает на зазевавшуюся добычу.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>SPIK3R</h4>
+                </div>
+                <img src="img/models/SPIK3R.jpg" alt="SPIK3R">
+
+                <p>Робот-скорпион. Шестиногий робот с пушкой.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>GRIPP3R</h4>
+                </div>
+                <img src="img/models/GRIPP3R.jpg" alt="GRIPP3R">
+
+                <p>Робот может хватать и перевозить небольшие предметы. Можно управлять роботом с телефона.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>TRACK3R</h4>
+                </div>
+                <img src="img/models/TRACK3R.jpg" alt="TRACK3R">
+
+                <p>Робот на гусеницах. Может передвигать предметы и разбрасывать их в стороны.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <h4>Собственные модели</h4>
+                </div>
+                <img src="img/models/my.jpg" alt="Собственные модели из Lego Ev3">
+
+                <p>Вы можете фантазировать и собирать собственные модели какие вам вздумается!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block benefit-block">
+    <h2>Что вы получите придя к нам?</h2>
+
+    <div class="h50"></div>
+
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Конструктор стоимостью от 25 до 50 тыс рублей
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Море удовольствия
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Индивидуальные занятия с преподавателем
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Интересные творческие задания
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Развитие мелкой моторики рук
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Развитие объемного мышления
+    </div>
+</div>
+
+<div class="block">
+    <h2>Почему стоит учиться именно у нас?</h2>
+
+    <div class="h50"></div>
+
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Чаще всего мы занимаемся индивидуально. Размер групп не более 2х человек.
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Мы учим еще и WEB программированию, а не только программируем Lego.
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Обучение проходит в игровом формате в соответствии с методиками Монтессори и Саммерхилла.
+    </div>
+    <div class="benefit">
+        <img src="img/lego-mindstorms-ev3-box.gif" height="200" alt="...">
+        Наши ученики счастливы, им нравится учиться.
+    </div>
+
+</div>
+
+<div class="block">
+    <h2>Кто мы такие?</h2>
+
+    <div>
+        <img src="img/Bessonov.jpg" alt="Преподаватель" style="float: left">
+
+        <h3>
+            <small>Преподаватель</small>
+            Бессонов Даниил Андреевич
+        </h3>
+        <p>образование: ФФ ВГУ, Инфотех NC </p>
+
+        <p>репетитор по математике, физике, информатике </p>
+
+        <p>опыт преподавания 9 лет </p>
+
+        <p>За 9 лет проведено более 1000 занятий </p>
+
+        <p>педагог в 3м поколении</p>
+
+        <p>хорошо знаю школьников и их проблемы </p>
+
+        <p>сотрудник IT компании с мировым именем</p>
+
+        <p>Почему я провожу уроки?</p>
+
+        <p>хотим сделать образование в России современным и интересным</p>
+
+    </div>
+</div>
+
+<div class="block">
+    <h2>Где и как проходят занятия?</h2>
+
+    <p>Занятия проходят в тайм кафе Лес (напротив главного корпуса ВГУ):<br>
+        <a href="http://anticafevrn.ru/" target="_blank">Тайм-клуб ЛЕС, Плехановская ул. 1 дом, Воронеж, Россия</a>
+    </p>
+
+    <p>Занятия проходят по выходным</p>
+
+    <p>Вы приходите, мы собираем робота, программируем его, радуемся, фоткаемся.<br>
+        Брать с собой ничего не нужно.
+    </p>
+</div>
+
+<div class="block">
+    <h2>Стоимость занятий</h2>
+
+    <div class="row">
+        <div class="col-sm-4 col-xs-4">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <p>Абонемент на</p>
+                    <h4>6 часов</h4>
+                    <p>(360 минут)</p>
+                    <p class="price">2999 руб</p>
+                    <button onclick="">Записаться</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-4">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <p>Абонемент на</p>
+                    <h4>1 час</h4>
+                    <p>(60 минут)</p>
+                    <p class="price">499 руб</p>
+                    <button onclick="">Записаться</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-4">
+            <div class="thumbnail my-thumbnail">
+                <div class="caption">
+                    <p>Купон на</p>
+                    <h4>Первое занятие</h4>
+                    <p>(60 минут)</p>
+                    <p class="price">50 руб</p>
+                    <button onclick="">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+    <h2>Хотите еще дешевле?</h2>
+    <div>
+        <img src="img/2friends.jpg" alt="Приводите друга" style="float: left">
+        <p>Приходите на занятие с другом, и мы сделаем каждому скидку <b>20%</b>. То есть 1 час занятия обойдется каждому из вас по <b>399 руб</b>.</p>
+    </div>
+</div>
+
+<div class="block">
+    <form>
+        <h2>Записаться на занятие</h2>
+        <div class="row">
+
+            <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <p>Приходите на занятие с другом, и мы сделаем каждому скидку 20%. То есть 1 час занятия обойдется каждому из вас по 399 руб.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <div class="input-group">
+                            <span class="input-group-addon">Ваше имя</span>
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">Ваш телефон</span>
+                            <input type="text" class="form-control" placeholder="+7 (950) 123 45 67">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">Ваш email</span>
+                            <input type="text" class="form-control" placeholder="email@mail.ru">
+                        </div>
+
+                        <button type="submit">Получить купон на первое занятие</button><br>
+                        <a class="xs-link" href="#">Политика конфиденциальности</a><!--TODO-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="block footer"></div>
+</div>
+</body>
+</html>
